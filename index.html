@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<!---->
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ユーザー登録</title>
-    <!--↓は外部スタイルシートをリンクしている-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>ユーザー登録</h1>
-    <form id="resister-form">
-        <!--↓は名前の入力フィールドを差し込んでいる-->
+    <form id="register-form">
+        <!-- 名前 -->
         <label for="name">名前:</label>
         <input type="text" id="name" name="name" required><br><br>
-        <!--↓はメールアドレスの入力フィールドを差し込んでいる-->
-        <label for="email">メールアドレス</label>
+        
+        <!-- メールアドレス -->
+        <label for="email">メールアドレス:</label>
         <input type="email" id="email" name="email" required><br><br>
-        <!--↓はパスワードの入力フィールドを差し込んでいる-->
-        <label for="password">パスワード</label>
+        
+        <!-- パスワード -->
+        <label for="password">パスワード:</label>
         <input type="password" id="password" name="password" required><br><br>
-        <!--↓はパスワード確認の入力フィールドを差し込んでいる-->
-        <label for="confirm-password" id="confirm-password" name="confirm-password" required><br><br>
-        <!--↓は登録ボタンを差し込んでいる-->
+        
+        <!-- パスワード確認 -->
+        <label for="confirm-password">パスワード確認:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+        
         <button type="submit">登録</button>
     </form>
-    <!--外部のジャバスクリプトをリンクしている-->
+
+    <!-- 登録済みユーザーを表示する領域 -->
+    <h2>登録済みユーザー</h2>
+    <ul id="user-list"></ul>
+
+    <script src="script.js"></script>
 </body>
 </html>

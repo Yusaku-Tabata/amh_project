@@ -1,3 +1,11 @@
+/* 全体のフォントや背景のスタイルを設定 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
 /* フォームのスタイル */
 form {
     max-width: 400px; /* フォームの幅を調整 */
@@ -23,7 +31,7 @@ input {
     margin-bottom: 15px; /* フィールド間の間隔を増やす */
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* パディングを幅に含める */
 }
 
 /* 登録ボタンのスタイル */
@@ -43,13 +51,26 @@ button:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
 }
 
-/* レスポンシブ対応 */
-@media (max-width: 600px) {
-    form {
-        padding: 15px; /* 狭い画面でのパディング調整 */
-    }
+/* ユーザーリストのスタイル */
+#user-list {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+    list-style: none;
+}
 
-    button {
-        font-size: 14px; /* ボタン文字を少し小さく */
-    }
+#user-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+#user-list {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 50px; /* 最低の高さを指定 */
 }
